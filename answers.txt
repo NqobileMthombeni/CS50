@@ -1,0 +1,34 @@
+Data Recap
+
+For Unsorted Data:**
+Sort 1: 6.309s
+Sort 2: 1.139s
+Sort 3: 3.071s
+
+For Sorted Data:
+Sort 1: 1.198s
+Sort 2: 1.181s
+Sort 3: 3.935s
+
+Correct Sorting Algorithm Analysis
+
+1. sort1
+
+sort1 uses:Bubble Sort
+How do you know?:Bubble Sort is inefficient with large unsorted lists due to its \(O(n^2)\) complexity, which aligns with the high runtime of 6.309s. For sorted lists, Bubble Sort’s time is slightly improved (1.198s), but still not as fast as more advanced algorithms.
+
+2. sort2
+
+sort2 uses:Merge Sort
+How do you know?: Merge Sort has a consistent \(O(n \log n)\) performance. The runtimes of 1.139s for unsorted and 1.181s for sorted lists are very close, indicating that sort2 performs efficiently and consistently regardless of the initial order.
+
+3. sort3
+
+sort3 uses:Selection Sort
+How do you know?:Selection Sort has a performance of \(O(n^2)\) and typically shows a high runtime on unsorted data (3.071s) and is relatively unaffected by the initial order of data. The runtime for sorted data (3.935s) being higher confirms that Selection Sort's efficiency does not significantly improve with sorted data.
+
+Corrected Assignments
+
+sort1:Bubble Sort
+sort2:Merge Sort
+sort3:Selection Sort
